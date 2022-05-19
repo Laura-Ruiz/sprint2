@@ -1,0 +1,78 @@
+
+$primary: #5265E1;
+$secondary: #FA5959;
+
+
+$navbar-light-toggler-border-color: none;
+
+$navbar-padding-y: 2em;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$navbar-light-toggler-icon-bg: url("../images/icon-hamburger.svg");
+
+.btn{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.14);
+}
+
+.btn-secondary, .btn-secondary:hover {
+    color:white;
+    width: 6em;
+    
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.nav-link{
+    font-family: unset;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.illustration-hero{
+    width: 30em;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+.rectangulo {
+    position: relative;
+    height:200px;
+    width: 38vw;
+    border-radius: 100px 0 0 100px;
+    background: #5265E1;
+    left: 10vw;
+    top: 10rem;
+}
+
+.column-right{
+    height: 25rem;
+}
+
+
+@media (min-width: 481px) and (max-width: 992px){
+    .rectangulo{
+        width: 65vw;
+        left: 17vw;
+        top: 9rem;
+    }
+    .column-right{
+        height: 20rem;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .rectangulo{
+        width: 65vw;
+        left: 17vw;
+        top: 7rem;
+        
+    }
+    .column-right{
+        height: 20rem;
+    }
+}
