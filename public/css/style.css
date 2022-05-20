@@ -2027,7 +2027,7 @@ progress {
   margin-bottom: 1rem;
   color: #212529;
   vertical-align: top;
-  border-color: #dee2e6;
+  border-color: #6e6d6d;
 }
 
 .table > :not(caption) > * > * {
@@ -4353,7 +4353,7 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #5265E1;
+  color: #6e6d6d;
   text-decoration: none;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -4367,7 +4367,7 @@ fieldset:disabled .btn {
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: #4251b4;
+  color: black;
 }
 
 .nav-link.disabled {
@@ -4377,7 +4377,7 @@ fieldset:disabled .btn {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid none;
 }
 
 .nav-tabs .nav-link {
@@ -4389,7 +4389,7 @@ fieldset:disabled .btn {
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
+  border-color: #e9ecef #e9ecef none;
   isolation: isolate;
 }
 
@@ -4401,7 +4401,7 @@ fieldset:disabled .btn {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: black;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -6363,7 +6363,7 @@ fieldset:disabled .btn {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #6e6d6d;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -6401,7 +6401,7 @@ fieldset:disabled .btn {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #6e6d6d;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
@@ -7816,7 +7816,7 @@ fieldset:disabled .btn {
 }
 
 .border {
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid #6e6d6d !important;
 }
 
 .border-0 {
@@ -7824,7 +7824,7 @@ fieldset:disabled .btn {
 }
 
 .border-top {
-  border-top: 1px solid #dee2e6 !important;
+  border-top: 1px solid #6e6d6d !important;
 }
 
 .border-top-0 {
@@ -7832,7 +7832,7 @@ fieldset:disabled .btn {
 }
 
 .border-end {
-  border-right: 1px solid #dee2e6 !important;
+  border-right: 1px solid #6e6d6d !important;
 }
 
 .border-end-0 {
@@ -7840,7 +7840,7 @@ fieldset:disabled .btn {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: 1px solid #6e6d6d !important;
 }
 
 .border-bottom-0 {
@@ -7848,7 +7848,7 @@ fieldset:disabled .btn {
 }
 
 .border-start {
-  border-left: 1px solid #dee2e6 !important;
+  border-left: 1px solid #6e6d6d !important;
 }
 
 .border-start-0 {
@@ -11972,52 +11972,82 @@ fieldset:disabled .btn {
   padding-left: 1.5em;
 }
 
-.nav-link {
+.navbar-link {
   font-family: unset;
   font-weight: 600;
   letter-spacing: 0.1em;
 }
 
-.illustration-hero {
+.second-nav:hover {
+  border-bottom: 3px solid red;
+}
+
+.nav-item {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.illustration-hero, .illustration-features-1 {
   width: 30em;
   height: auto;
   position: absolute;
   z-index: 1;
 }
 
-.rectangulo {
+.figure {
   position: relative;
-  height: 200px;
-  width: 38vw;
-  border-radius: 100px 0 0 100px;
+  height: 15rem;
   background: #5265E1;
-  left: 10vw;
-  top: 10rem;
+  top: 7rem;
+  width: 38vw;
 }
 
-.column-right {
-  height: 25rem;
+.fig-right {
+  border-radius: 100px 0 0 100px;
+  left: 10vw;
+}
+
+.fig-left {
+  border-radius: 0 100px 100px 0;
+  left: -10vw;
+}
+
+.column-right, .column-left-2 {
+  height: 20rem;
 }
 
 @media (min-width: 481px) and (max-width: 992px) {
-  .rectangulo {
+  .fig-right {
     width: 65vw;
     left: 17vw;
     top: 9rem;
   }
-  .column-right {
-    height: 20rem;
+  .fig-left {
+    width: 65vw;
+    left: -20vw;
+  }
+  .column-right, .column-left-2 {
+    height: 25rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .rectangulo {
+  .fig-right {
     width: 65vw;
     left: 17vw;
     top: 7rem;
   }
-  .column-right {
-    height: 20rem;
+  .fig-left {
+    width: 77vw;
+    left: -12vw;
+    top: 9rem;
+  }
+  .column-right, .column-left-2 {
+    height: 25rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

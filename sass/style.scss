@@ -4,8 +4,18 @@ $secondary: #FA5959;
 
 
 $navbar-light-toggler-border-color: none;
-
 $navbar-padding-y: 2em;
+
+$nav-tabs-border-color: none;
+
+$nav-link-color: #6e6d6d;
+
+
+$nav-tabs-link-active-color: black;
+$nav-link-hover-color: black;
+
+
+$border-color: #6e6d6d;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
@@ -27,52 +37,85 @@ $navbar-light-toggler-icon-bg: url("../images/icon-hamburger.svg");
     padding-left: 1.5em;
 }
 
-.nav-link{
+.navbar-link{
     font-family: unset;
     font-weight: 600;
     letter-spacing: 0.1em;
 }
 
-.illustration-hero{
+.second-nav:hover{
+    border-bottom: 3px solid red;
+}
+
+
+.nav-item{
+    justify-content: center;
+    display: flex;
+}
+
+.illustration-hero, .illustration-features-1{
     width: 30em;
     height: auto;
     position: absolute;
     z-index: 1;
 }
 
-.rectangulo {
+.figure {
     position: relative;
-    height:200px;
-    width: 38vw;
-    border-radius: 100px 0 0 100px;
+    height:15rem;
     background: #5265E1;
+    top: 7rem;
+    width: 38vw;
+}
+.fig-right{
+    border-radius: 100px 0 0 100px;
     left: 10vw;
-    top: 10rem;
 }
 
-.column-right{
-    height: 25rem;
+.fig-left{
+    border-radius:  0 100px 100px 0;
+    left: -10vw;
 }
+
+.column-right,.column-left-2{
+    height: 20rem;
+}
+
 
 
 @media (min-width: 481px) and (max-width: 992px){
-    .rectangulo{
+    .fig-right{
         width: 65vw;
         left: 17vw;
         top: 9rem;
     }
-    .column-right{
-        height: 20rem;
+
+    .fig-left{
+        width: 65vw;
+        left: -20vw;
+        
     }
+    .column-right, .column-left-2{
+        height: 25rem;
+    }
+    
 }
 @media (min-width: 320px) and (max-width: 480px){
-    .rectangulo{
+    .fig-right{
         width: 65vw;
         left: 17vw;
         top: 7rem;
-        
     }
-    .column-right{
-        height: 20rem;
+
+    .fig-left{
+        width: 77vw;
+        left: -12vw;
+        top: 9rem;
     }
+
+    .column-right, .column-left-2{
+        height: 25rem;
+    }
+   
 }
+
