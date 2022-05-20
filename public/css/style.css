@@ -11964,7 +11964,7 @@ fieldset:disabled .btn {
 
 .btn-secondary, .btn-secondary:hover {
   color: white;
-  width: 6em;
+  width: 7em;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -11980,15 +11980,6 @@ fieldset:disabled .btn {
 
 .second-nav:hover {
   border-bottom: 3px solid red;
-}
-
-.nav-item {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .illustration-hero, .illustration-features-1 {
@@ -12037,6 +12028,9 @@ fieldset:disabled .btn {
   .column-right, .column-left-2 {
     height: 25rem;
   }
+  .container-card {
+    height: auto;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -12052,6 +12046,9 @@ fieldset:disabled .btn {
   }
   .column-right, .column-left-2 {
     height: 25rem;
+  }
+  .container-card {
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,9 +18,12 @@ $nav-link-hover-color: black;
 $border-color: #6e6d6d;
 
 
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 $navbar-light-toggler-icon-bg: url("../images/icon-hamburger.svg");
+
+
 
 .btn{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.14);
@@ -28,7 +31,7 @@ $navbar-light-toggler-icon-bg: url("../images/icon-hamburger.svg");
 
 .btn-secondary, .btn-secondary:hover {
     color:white;
-    width: 6em;
+    width: 7em;
     
 }
 
@@ -48,10 +51,6 @@ $navbar-light-toggler-icon-bg: url("../images/icon-hamburger.svg");
 }
 
 
-.nav-item{
-    justify-content: center;
-    display: flex;
-}
 
 .illustration-hero, .illustration-features-1{
     width: 30em;
@@ -100,6 +99,10 @@ $navbar-light-toggler-icon-bg: url("../images/icon-hamburger.svg");
     .column-right, .column-left-2{
         height: 25rem;
     }
+
+    .container-card{
+        height: auto;
+    }
     
 }
 @media (min-width: 320px) and (max-width: 480px){
@@ -119,5 +122,8 @@ $navbar-light-toggler-icon-bg: url("../images/icon-hamburger.svg");
         height: 25rem;
     }
    
+    .container-card{
+        height: auto;
+    }
 }
 
