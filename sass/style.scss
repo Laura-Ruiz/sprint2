@@ -2,6 +2,7 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 
+$blue:rgb(37, 37, 66);
 
 $navbar-light-toggler-border-color: none;
 $navbar-padding-y: 2em;
@@ -25,8 +26,8 @@ $accordion-icon-active-color: $primary;
 
 $navbar-light-toggler-icon-bg: url("../images/icon-hamburger.svg");
 
-
-
+$form-feedback-icon-invalid: url("../images/icon-error.svg");
+$form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>");
 .btn{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.14);
 }
@@ -86,6 +87,19 @@ $navbar-light-toggler-icon-bg: url("../images/icon-hamburger.svg");
     height: 26rem;
 }
 
+.footer-links{
+    background-color: $blue;
+}
+
+.container-footer{
+    height: 18rem;
+    
+}
+
+.paragraph-footer{
+    font-family: monospace;
+    font-size: small;
+}
 @media (min-width: 481px) and (max-width: 992px){
     .fig-right{
         width: 65vw;
