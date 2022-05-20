@@ -12020,6 +12020,10 @@ fieldset:disabled .btn {
   height: 20rem;
 }
 
+.container-card {
+  height: 26rem;
+}
+
 @media (min-width: 481px) and (max-width: 992px) {
   .fig-right {
     width: 65vw;
