@@ -6,36 +6,55 @@ $blue:rgb(37, 37, 66);
 
 $navbar-light-toggler-border-color: none;
 $navbar-padding-y: 2em;
+$navbar-light-hover-color: $secondary;
+
 
 $nav-tabs-border-color: none;
-
 $nav-link-color: #6e6d6d;
-
-
-$nav-tabs-link-active-color: black;
-$nav-link-hover-color: black;
+$nav-link-hover-color: $secondary;
 
 
 $border-color: #6e6d6d;
 
 $accordion-icon-color: $primary;
-$accordion-icon-active-color: $primary;
+$accordion-icon-active-color: $secondary;
 
+$form-feedback-invalid-color: $secondary;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-$navbar-light-toggler-icon-bg: url("../images/icon-hamburger.svg");
+$navbar-light-toggler-icon-bg: url("./images/icon-hamburger.svg");
 
-$form-feedback-icon-invalid: url("../images/icon-error.svg");
-$form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>");
+$form-feedback-icon-invalid: url("./images/icon-error.svg");
+$form-feedback-icon-valid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>");
+
 .btn{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.14);
 }
 
-.btn-secondary, .btn-secondary:hover {
+.btn-secondary{
     color:white;
     width: 7em;
-    
+
+    &:hover{
+    color: $secondary;
+    width: 7em;
+    background-color: white;
+    }
+}
+
+.btn-primary:hover{
+    color: $primary;
+    background-color: white;
+}
+
+.btn-light:hover{
+    border-color: black;
+    color: black;
+
+}
+.accordion-button:hover{
+    color: $secondary;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -47,12 +66,23 @@ $form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://w
     font-family: unset;
     font-weight: 600;
     letter-spacing: 0.1em;
+    
+    &:hover{
+        color:$secondary;
+    }
 }
 
-.second-nav:hover{
-    border-bottom: 3px solid red;
+
+.nav-tabs{
+    border:0;
 }
 
+.nav-link.active {
+    border:0;
+    border-bottom: 3px solid $secondary !important; 
+    color: black;
+    font-weight: bold;
+}
 
 
 .illustration-hero, .illustration-features-1{
@@ -65,10 +95,11 @@ $form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://w
 .figure {
     position: relative;
     height:15rem;
-    background: #5265E1;
+    background: $primary;
     top: 7rem;
     width: 38vw;
 }
+
 .fig-right{
     border-radius: 100px 0 0 100px;
     left: 10vw;
@@ -87,8 +118,11 @@ $form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://w
     height: 26rem;
 }
 
-.footer-links{
+.footer-nav{
     background-color: $blue;
+}
+.footer__link{
+    color:white;
 }
 
 .container-footer{
@@ -100,7 +134,31 @@ $form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://w
     font-family: monospace;
     font-size: small;
 }
-@media (min-width: 481px) and (max-width: 992px){
+
+.invalid-feedback{
+    background-color: #FA5959;
+    color: white;
+    margin-top: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.facebook{
+    fill:white;
+    &:hover{
+     fill:$secondary;
+   }
+}
+
+.twitter{
+    fill:white;
+    &:hover{
+        fill:$secondary;
+    }
+}
+
+
+
+@media (max-width: 991px) {
     .fig-right{
         width: 65vw;
         left: 17vw;
@@ -119,8 +177,25 @@ $form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://w
     .container-card{
         height: auto;
     }
+
+    .list_features{
+        .nav-item:first-child{
+            border-top: 1px solid grey;
+        }
+    }
     
+    .accordion{
+        .accordion-item:first-child{
+            border-top: 1px solid rgba(145, 145, 145, 0.431);
+        }
+        .accordion-item:last-child{
+            border-bottom: 1px solid rgba(145, 145, 145, 0.431);
+        }
+    }
+    
+        
 }
+
 @media (min-width: 320px) and (max-width: 480px){
     .fig-right{
         width: 65vw;
@@ -134,12 +209,5 @@ $form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://w
         top: 9rem;
     }
 
-    .column-right, .column-left-2{
-        height: 25rem;
-    }
-   
-    .container-card{
-        height: auto;
-    }
+      
 }
-
