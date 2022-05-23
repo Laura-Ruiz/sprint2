@@ -12042,10 +12042,6 @@ fieldset:disabled .btn {
   height: 20rem;
 }
 
-.container-card {
-  height: 26rem;
-}
-
 .footer-nav {
   background-color: #252542;
 }
@@ -12084,6 +12080,21 @@ fieldset:disabled .btn {
 
 .twitter:hover {
   fill: #FA5959;
+}
+
+.container-card .column_card:nth-child(1) {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+
+.container-card .column_card:nth-child(2) {
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+}
+
+.container-card .column_card:nth-child(3) {
+  margin-top: 3rem;
+  margin-bottom: -3rem;
 }
 
 @media (max-width: 991px) {

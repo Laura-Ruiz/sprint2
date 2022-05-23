@@ -114,9 +114,6 @@ $form-feedback-icon-valid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org
     height: 20rem;
 }
 
-.container-card{
-    height: 26rem;
-}
 
 .footer-nav{
     background-color: $blue;
@@ -156,6 +153,22 @@ $form-feedback-icon-valid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org
     }
 }
 
+.container-card{
+
+    .column_card:nth-child(1){
+        margin-top: 1rem; 
+        margin-bottom: -1rem;
+    }
+    .column_card:nth-child(2){
+        margin-top: 2rem;
+        margin-bottom: -2rem;
+    }
+    .column_card:nth-child(3){
+        margin-top: 3rem;
+         margin-bottom: -3rem;
+    }
+
+}
 
 
 @media (max-width: 991px) {
@@ -209,5 +222,4 @@ $form-feedback-icon-valid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org
         top: 9rem;
     }
 
-      
 }
